@@ -1,11 +1,10 @@
 import chai from 'chai';
-import { Placeholder } from './index.js';
+import persistence from './index.js';
 
 const { expect } = chai;
 
 describe('some test', () => {
-  const placeholder = new Placeholder();
   it('SHOULD do something', () => {
-    expect(placeholder.anotherFunction()).to.be.eql(1);
+    expect(persistence(39)).to.be.eql(3);
   });
 });
